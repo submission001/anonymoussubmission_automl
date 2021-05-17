@@ -1,4 +1,4 @@
-# Code of Anonymous Submission
+# Code of Submission "Multimodal AutoML on Structured Tables with Text Fields"
 
 ## Install the Benchmark Suite
 
