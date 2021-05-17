@@ -1,4 +1,4 @@
-# Code of Anonymous KDD 2021 Submission
+# Code of Anonymous Submission
 
 ## Install the Benchmark Suite
 
