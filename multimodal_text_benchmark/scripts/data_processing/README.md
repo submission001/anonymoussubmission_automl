@@ -116,7 +116,7 @@ https://www.kaggle.com/zynicide/wine-reviews (winemag-data-130k-v2.csv)
 
 
 ## Fake Jobs
-https://www.kaggle.com/shivamb/real-or-fake-fake-job-posting-prediction
+https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction
 
 ```
 python3 process_fake_jobs.py
