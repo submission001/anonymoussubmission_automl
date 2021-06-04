@@ -1,4 +1,4 @@
-# Code of Submission "Multimodal AutoML on Structured Tables with Text Fields"
+# Code and Benchmark of Submission "Multimodal AutoML on Structured Tables with Text Fields"
 
 ## Install the Benchmark Suite
 
@@ -26,10 +26,19 @@ test_dataset = dataset_registry.create('product_sentiment_machine_hack', 'test')
 print(train_dataset.data)
 ```
 
+## Details about the Datasets
+
+The details of the datasets in our benchmark will be in [multimodal_text_benchmark](multimodal_text_benchmark/README.md).
+
+## License
+The benchmarking datasets are released under this licensing scheme: [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+
+We do not own any of the datasets in the benchmark and this benchmark can only be used for noncommercial purpose.
+
+
 ## Install AutoGluon
 
 You will need to install MXNet first as a prerequisite:
-
 
 ### Install MXNet
 
