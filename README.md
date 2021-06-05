@@ -1,7 +1,7 @@
 # Multimodal AutoML Benchmark on Structured Tables with Text Fields
 
 This benchmark contains diverse tabular datasets, each containing numeric/categorical as well as text columns.
-The goal is to evaluate the performance of (automated) ML systems for such multimodal supervised learning tasks (classification and regression).
+The goal is to evaluate the performance of (automated) ML systems for supervised learning tasks (classification and regression) with such multimodal data.
 Python code is provided to run different variants of the [AutoGluon](https://github.com/awslabs/autogluon/) AutoML tool on the benchmark.
 
 
