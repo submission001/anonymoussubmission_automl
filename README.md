@@ -2,7 +2,7 @@
 
 This benchmark contains diverse tabular datasets, each containing numeric/categorical as well as text columns.
 The goal is to evaluate the performance of (automated) ML systems for such multimodal supervised learning tasks (classification and regression).
-Code is provided to run different variants of the [AutoGluon](https://github.com/awslabs/autogluon/) AutoML tool on the benchmark.
+Python code is provided to run different variants of the [AutoGluon](https://github.com/awslabs/autogluon/) AutoML tool on the benchmark.
 
 
 ## Details about the Datasets
@@ -45,7 +45,7 @@ print(train_dataset.data)
 
 ## Install AutoGluon
 
-This repository contains a particular version of AutoGluon we previously ran on the benchmark. 
+This repository contains a particular version of AutoGluon we previously ran on the benchmark. We recommend installing it in a fresh virtualenv. 
 To use this version, you will need to install MXNet first as a prerequisite. It is recommended to use MXNet 1.8 wheel with CUDA 11.0:
 
 ```bash
