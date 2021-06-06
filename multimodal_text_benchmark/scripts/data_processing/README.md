@@ -1,9 +1,11 @@
 # Data Processing Scripts
 
-This directory provides the scripts used to convert the data from each original source into the formatted dataset used in the benchmark.
-These scripts are provided for reproducibility; they are not needed if you just want to run the benchmark or work with some of its datasets.
-For datasets retrieved from Kaggle, you must first install the [Kaggle API](https://www.kaggle.com/docs/api).
-Statistics of the datasets may be generated as follows:
+This directory provides the scripts used to convert the data from each original source into the formatted dataset used in the benchmark. 
+These scripts are provided for reproducibility; they are not needed if you just want to run the benchmark or work with some of its datasets. 
+
+For datasets retrieved from Kaggle, you must first install the [Kaggle API](https://www.kaggle.com/docs/api). 
+
+Statistics of the datasets may be generated as follows: 
 
 ```
 python3 get_dataset_analytics.py
@@ -20,7 +22,7 @@ python3 process_jigsaw.py
 
 ## Product Sentiment Analysis
 
-Link to original: https://www.machinehack.com/hackathons/product_sentiment_classification_weekend_hackathon_19/overview
+Source: https://www.machinehack.com/hackathons/product_sentiment_classification_weekend_hackathon_19/overview
 
 ```
 mkdir -p machine_hack_product_sentiment
@@ -81,7 +83,9 @@ python3 process_jc_penney.py
 
 ## Kickstarter Funding
 
-https://www.kaggle.com/codename007/funding-successful-projects?select=train.csv
+Source: https://www.kaggle.com/codename007/funding-successful-projects?select=train.csv
+
+First download the data and then run:
 
 ```
 python3 process_kicksarter.py
@@ -89,7 +93,9 @@ python3 process_kicksarter.py
 
 ## IMDB
 
-https://www.kaggle.com/PromptCloudHQ/imdb-data?select=IMDB-Movie-Data.csv
+Source: https://www.kaggle.com/PromptCloudHQ/imdb-data?select=IMDB-Movie-Data.csv
+
+First download the data and then run:
 
 ```
 python3 process_imdb_genre.py
@@ -97,7 +103,9 @@ python3 process_imdb_genre.py
 
 ## News Popularity
 
-https://archive.ics.uci.edu/ml/datasets/online+news+popularity
+Source: https://archive.ics.uci.edu/ml/datasets/online+news+popularity
+
+First download the data and then run:
 
 ```
 python3 process_news_popularity.py
