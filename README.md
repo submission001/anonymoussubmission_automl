@@ -11,9 +11,9 @@ The datasets in our benchmark are described in the [multimodal_text_benchmark RE
 
 
 ## License
-The benchmarking datasets are released under this licensing scheme: [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
-
-We do not own any of the datasets in the benchmark and this benchmark can only be used for noncommercial purposes. Please also refer to the licenses of the original sources for each dataset linked in the [multimodal_text_benchmark README](multimodal_text_benchmark/README.md).
+The versions of datasets in this benchmark are released under this license: [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+Note that the datasets in this benchmark are modified versions of previously publicly-available original copies and we do not own any of the datasets in the benchmark. Any data from this benchmark which has previously been published elsewhere falls under the original license from which the data originated. 
+Please refer to the licenses of each original source linked in the [multimodal_text_benchmark README](multimodal_text_benchmark/README.md).
 
 
 ## Install the Benchmark Suite
