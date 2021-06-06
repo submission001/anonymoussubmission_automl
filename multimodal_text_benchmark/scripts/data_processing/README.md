@@ -107,10 +107,16 @@ python3 process_news_popularity.py
 
 Retrieve data from: https://www.kaggle.com/zynicide/wine-reviews (winemag-data-130k-v2.csv)
 
+Then run: 
+
+```
+python3 process_wine_reviews.py 
+```
 
 ## Fake Jobs
 
 Source: https://www.kaggle.com/shivamb/real-or-fake-fake-job-posting-prediction
+
 First download the data and then run:
 
 ```
