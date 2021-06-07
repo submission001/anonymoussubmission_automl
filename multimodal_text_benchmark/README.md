@@ -1,126 +1,36 @@
 # Dataset of "Multimodal AutoML on Structured Tables with Text Fields"
 
+For loading the dataset, using the following code. The following loads the `prod` dataset mentioned in the paper.
 
-# Generate statistics
+```python
+from auto_mm_bench.datasets import dataset_registry
 
-```
-cd scripts
-python3 get_dataset_analytics.py
-```
-
-
-## Jigsaw Unintended Bias in Toxicity Classification
-
-Kaggle link: https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification/data.
-
-The task in Kaggle competition is to classify whether the user comment contains toxic information.
-
-To preprocess the dataset, we used the following commands:
-
-```
-kaggle competitions download -c jigsaw-unintended-bias-in-toxicity-classification
-unzip jigsaw-unintended-bias-in-toxicity-classification.zip -d jigsaw-unintended-bias-in-toxicity-classification
-python3 process_jigsaw.py
+print(dataset_registry.list_keys())
+train_dataset = dataset_registry.create('product_sentiment_machine_hack', 'train')
+test_dataset = dataset_registry.create('product_sentiment_machine_hack', 'test')
+print(train_dataset.data)
 ```
 
-## Product Sentiment Analysis
-MachineHack link: https://www.machinehack.com/hackathons/product_sentiment_classification_weekend_hackathon_19/overview
+The statistics  of the benchmarking datasets are given as follows. The list of `keys` are also shown in [scripts/benchmark/benchmark_datasets.txt](scripts/benchmark/benchmark_datasets.txt).
 
-The task is to analyze sentiment of the user's comments on the product.
+| ID       | key |  #Train | #Test | Task | Metric  | Prediction Target |
+|----------|-----|---------|-------|------|---------|-------------------|
+| prod     | product_sentiment_machine_hack  | 5,091 | 1,273 | multiclass | accuracy | sentiment related to product |
+| airbnb   | melbourne_airbnb  | 18,316  | 4,579  | multiclass  | accuracy | price of Airbnb listing |
+| channel  | news_channel  | 20,284  | 5,071  | multiclass | accuracy | category of news article |
+| wine     | wine_reviews  | 84,123  | 21,031 | multiclass | accuracy | variety of wine |
+| imdb     | imdb_genre_prediction | 800 | 200 | binary | roc_auc | whether film is a drama |
+| jigsaw   | jigsaw_unintended_bias100K | 100,000 | 25,000 | binary | roc_auc | whether comments are toxic |
+| fake     | fake_job_postings2 | 12,725 | 3,182 | binary | roc_auc | whether job postings are fake |
+| kick     | kick_starter_funding | 86,052 | 21,626 | binary | roc_auc | will Kickstarter get funding |
+| ae       | ae_price_prediction  | 22,662 | 5,666 | regression | r2 | American-Eagle item prices |
+| qaa      | google_qa_answer_type_reason_explanation | 4,863 | 1,216 | regression | r2 | type of answer |
+| qaq      | google_qa_question_type_reason_explanation | 4,863 | 1,216 | regression | r2 | type of question |
+| cloth    | women_clothing_review | 18,788 | 4,698 | regression | r2 | review score |
+| mercari  | mercari_price_suggestion100K | 100,000 | 25,000 | regression | r2 | price of Mercari products |
+| jc       | jc_penney_products | 10,860 | 2,715 | regression | r2 | price of JC Penney products |
+| pop      | news_popularity2 | 24,007 | 6,002 | regression | r2 | news article popularity online |
 
-```
-mkdir -p machine_hack_product_sentiment
-wget https://automl-mm-bench.s3.amazonaws.com/machine_hack_product_sentiment/all_train.csv -O machine_hack_product_sentiment/all_train.csv
-```
+# How to generate these datasets
 
-## Google Quest QA
-
-```
-kaggle competitions download -c google-quest-challenge
-unzip google-quest-challenge.zip -d google-quest-challenge
-python3 process_google_quest_qa.py
-```
-
-## Women Clothing Review
-
-```
-python3 process_women_clothing_review.py
-```
-
-## Airbnb Price Prediction
-
-Download the data from S3
-```
-wget -O cleansed_listings_dec18.csv https://autogluon-text-data.s3.amazonaws.com/multimodal_text/melbourne-airbnb/cleansed_listings_dec18.csv
-python3 process_airbnb.py
-```
-
-
-## Mercari Price Suggestion Challenge
-
-Source: https://www.kaggle.com/c/mercari-price-suggestion-challenge/data
-
-```
-kaggle competitions download -c mercari-price-suggestion-challenge
-unzip mercari-price-suggestion-challenge.zip -d mercari-price-suggestion-challenge
-sudo apt-get install p7zip-full
-cd mercari-price-suggestion-challenge
-7z x train.tsv.7z
-7z x test.tsv.7z
-cd ..
-python3 process_mercari_price_suggestion.py
-```
-
-## AE Innerwear Price Prediction
-
-Source: https://www.kaggle.com/PromptCloudHQ/innerwear-data-from-victorias-secret-and-others
-
-```
-wget -O ae_com.csv.zip https://automl-mm-bench.s3.amazonaws.com/ae_com.csv.zip
-unzip ae_com.csv.zip
-python3 process_ae_price_prediction.py
-
-```
-
-## JC Penny
-
-Source: https://www.kaggle.com/PromptCloudHQ/all-jc-penny-products
-Download and then run
-```
-python3 process_jc_penney.py
-```
-
-## Kickstarter Funding
-
-https://www.kaggle.com/codename007/funding-successful-projects?select=train.csv
-
-```
-python3 process_kicksarter.py
-```
-
-## IMDB
-
-https://www.kaggle.com/PromptCloudHQ/imdb-data?select=IMDB-Movie-Data.csv
-
-```
-python3 process_imdb_genre.py
-```
-
-## News Popularity
-
-https://archive.ics.uci.edu/ml/datasets/online+news+popularity
-
-```
-python3 process_news_popularity.py
-```
-
-## Wine Review
-https://www.kaggle.com/zynicide/wine-reviews (winemag-data-130k-v2.csv)
-
-
-## Fake Jobs
-https://www.kaggle.com/shivamb/real-or-fake-fake-job-posting-prediction
-
-```
-python3 process_fake_jobs.py
-```
+Go to [scripts/data_processing](scripts/data_processing/README.md) to check the details.
