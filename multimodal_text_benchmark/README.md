@@ -13,8 +13,8 @@ print(train_dataset.data)
 
 The statistics  of the benchmarking datasets are given as follows. The list of `keys` are also shown in [scripts/benchmark/benchmark_datasets.txt](scripts/benchmark/benchmark_datasets.txt).
 
-| ID       | key |  #Train | #Test | Task | Metric  | Task | Prediction Target |
-|----------|-----|---------|-------|------|--------|-------|-------------------|
+| ID       | key |  #Train | #Test | Task | Metric  | Prediction Target |
+|----------|-----|---------|-------|------|---------|-------------------|
 | prod     | product_sentiment_machine_hack  | 5,091 | 1,273 | multiclass | accuracy | sentiment related to product |
 | airbnb   | melbourne_airbnb  | 18,316  | 4,579  | multiclass  | accuracy | price of Airbnb listing |
 | channel  | news_channel  | 20,284  | 5,071  | multiclass | accuracy | category of news article |
