@@ -7,7 +7,7 @@ Python code is provided to run different variants of the [AutoGluon](https://git
 
 ## Details about the Datasets
 
-The datasets in our benchmark are described in the [multimodal_text_benchmark README](multimodal_text_benchmark/README.md).
+The datasets in our benchmark are described in the [multimodal_text_benchmark](multimodal_text_benchmark) folder.
 
 
 ## License
