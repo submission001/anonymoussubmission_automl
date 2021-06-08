@@ -1,4 +1,4 @@
-# Multimodal AutoML Benchmark on Structured Tables with Text Fields
+# Multimodal AutoML Benchmark on Tables with Text Fields
 
 This benchmark contains diverse tabular datasets, each containing numeric/categorical as well as text columns.
 The goal is to evaluate the performance of (automated) ML systems for supervised learning tasks (classification and regression) with such multimodal data.
