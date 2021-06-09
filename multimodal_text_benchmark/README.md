@@ -1,17 +1,21 @@
-# Dataset of "Multimodal AutoML on Structured Tables with Text Fields"
+# Datasets in the Benchmark
 
-For loading the dataset, using the following code. The following loads the `prod` dataset mentioned in the paper.
+Here is how to load a particular dataset into a pandas DataFrame. The following code loads the `prod` (i.e. product_sentiment_machine_hack) dataset:
 
 ```python
 from auto_mm_bench.datasets import dataset_registry
 
-print(dataset_registry.list_keys())
+print(dataset_registry.list_keys())  # use these keys to specify which dataset to load
+
 train_dataset = dataset_registry.create('product_sentiment_machine_hack', 'train')
 test_dataset = dataset_registry.create('product_sentiment_machine_hack', 'test')
 print(train_dataset.data)
 ```
 
-The statistics  of the benchmarking datasets are given as follows. The list of `keys` are also shown in [scripts/benchmark/benchmark_datasets.txt](scripts/benchmark/benchmark_datasets.txt).
+These commands will also download a local copy of the dataset file, which is either in Parquet or CSV format (both can be easily loaded into pandas DataFrame).
+
+The statistics of the benchmarking datasets are listed in the table below. The list of `keys` are also shown in [scripts/benchmark/benchmark_datasets.txt](scripts/benchmark/benchmark_datasets.txt). You can use these `key` strings to load any of the datasets in the benchmark via the above code. 
+
 
 | ID       | key |  #Train | #Test | Task | Metric  | Prediction Target |
 |----------|-----|---------|-------|------|---------|-------------------|
@@ -31,6 +35,68 @@ The statistics  of the benchmarking datasets are given as follows. The list of `
 | jc       | jc_penney_products | 10,860 | 2,715 | regression | r2 | price of JC Penney products |
 | pop      | news_popularity2 | 24,007 | 6,002 | regression | r2 | news article popularity online |
 
-# How to generate these datasets
 
-Go to [scripts/data_processing](scripts/data_processing/README.md) to check the details.
+# Benchmark Creation
+
+The folder [scripts/data_processing](scripts/data_processing/README.md) contains the scripts previously used to create the benchmark version of each dataset from the original data source. 
+
+# Additional Details for each Dataset
+
+## prod
+
+Link to original data source: https://machinehack.com/hackathons/product_sentiment_classification_weekend_hackathon_19/overview
+
+
+## airbnb
+
+Link to original data source: 
+
+## wine
+
+Link to original data source: 
+
+## imdb
+
+Link to original data source: 
+
+## jigsaw
+
+Link to original data source: 
+
+## fake
+
+Link to original data source: 
+
+## kick
+
+Link to original data source: 
+
+## ae
+
+Link to original data source: 
+
+## qaa
+
+Link to original data source: 
+
+## qaq
+
+Link to original data source: 
+
+## cloth
+
+Link to original data source: 
+
+## mercari
+
+Link to original data source: 
+
+## jc
+
+Link to original data source: 
+
+## channel
+
+Link to original data source: 
+
+## pop
