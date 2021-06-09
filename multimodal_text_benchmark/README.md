@@ -38,13 +38,13 @@ The statistics of the benchmarking datasets are listed in the table below. The l
 | pop      | news_popularity2 | 24,007 | 6,002 | regression | r2 | news article popularity online |
 
 
-# Benchmark Creation
+## Benchmark Creation
 
 The folder [scripts/data_processing](scripts/data_processing/README.md) contains the scripts previously used to create the benchmark version of each dataset from the original data source. 
 
-# Additional Details for each Dataset
+## Additional Details for each Dataset
 
-## prod
+### prod
 
 Original data source: Product Sentiment Classification (MachineHack prediction competition)
 
@@ -52,7 +52,7 @@ Link: https://machinehack.com/hackathons/product_sentiment_classification_weeken
 
 **Task:** (Multiclass Classification) Classify the sentiment of user reviews of products based on the review text and product type.
  
-## airbnb
+### airbnb
 
 Original data source: Melbourne Airbnb Open Data
 
@@ -60,7 +60,7 @@ Link: https://www.kaggle.com/tylerx/melbourne-airbnb-open-data
 
 **Task:** (Multiclass Classification) Predict the price label of AirBnb listings (in Melbourne, Australia) based on the page of each listing which includes many miscellaneous features about the listing.
 
-## wine
+### wine
 
 Original data source: 130k wine reviews with variety, location, winery, price, and description (from WineEnthusiast)
 
@@ -68,7 +68,7 @@ Link: https://www.kaggle.com/zynicide/wine-reviews
 
 **Task:** (Multiclass Classification)  Classify the variety of wines based on tasting descriptions from sommeliers, their price, country-of-origin, and other features.
 
-## imdb
+### imdb
 
 Original data source: IMDB data from 2006 to 2016 - A data set of 1,000 popular movies on IMDB in the last 10 years
 
@@ -80,7 +80,7 @@ was created.
 **Task:** (Binary Classification) Predict whether or not a movie falls within the Drama category based on its name, description,
 actors/directors, year released, runtime, and other features.
 
-## jigsaw
+### jigsaw
 
 Original data source: Jigsaw Unintended Bias in Toxicity Classification (Kaggle prediction competition)
 
@@ -88,7 +88,7 @@ Link: https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification
 
 **Task:** (Binary Classification) Predict whether online social media comments are toxic based on their text and additional tabular features providing information about the post (e.g. likes, rating, date created, etc.). 
 
-## fake
+### fake
 
 Original data source: Fake JobPosting Prediction
 
@@ -96,7 +96,7 @@ Link: https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction
 
 **Task:** (Binary Classification) Predict whether online job postings are real or fake based on their text, amount of salary offered, degree of education demanded, etc.
 
-## kick
+### kick
 
 Original data source: Funding Successful Projects on Kickstarter
 
@@ -104,7 +104,7 @@ Link: https://www.kaggle.com/codename007/funding-successful-projects
 
 **Task:** (Binary Classification) Predict whether a proposed Kickstarter project will achieve funding goal based on its title, description, amount of money requested, date posted, and other features.
 
-## ae
+### ae
 
 Original data source: Innerwear Data from American Eagle
 
@@ -115,7 +115,7 @@ was created.
 
 **Task:** (Regression) Predict the price of inner-wear items sold by retailer American Eagle based on features from their online product page.
 
-## qaa
+### qaa
 
 Original data source: Google QUEST Q&A Labeling (Kaggle prediction competition)
 
@@ -123,7 +123,7 @@ Link: https://www.kaggle.com/c/google-quest-challenge
 
 **Task:** (Regression) Given a question and an answer (from the Crowdsource team at Google) as well as additional category features, predict the (subjective) type of the answer in relation to the question.
 
-## qaq
+### qaq
 
 Original data source: Google QUEST Q&A Labeling (Kaggle prediction competition)
 
@@ -132,7 +132,7 @@ Link: https://www.kaggle.com/c/google-quest-challenge
 **Task:** (Regression) Given a question and an answer (from the Crowdsource team at Google) as well as additional
  category features, predict the (subjective) type of the question in relation to the answer.
 
-## cloth
+### cloth
 
 Original data source: Women's E-Commerce Clothing Reviews
 
@@ -140,7 +140,7 @@ Link: https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews
 
 **Task:** Predict the score of a customer review of clothing items (sold by an anonymous retailer) based on the review text, and product features like the clothing category. 
 
-## mercari
+### mercari
 
 Original data source: Mercari Price Suggestion Challenge (Kaggle prediction competition)
 
@@ -148,7 +148,7 @@ Link: https://www.kaggle.com/c/mercari-price-suggestion-challenge
 
 **Task:** (Regression) Predict the price of items sold in the online marketplace of Mercari based on miscellaneous information from the product page like name, description, free shipping, etc.
 
-## jc
+### jc
 
 Original data source: 20,000 product listings from JCPenney
 
@@ -159,7 +159,7 @@ was created.
 
 **Task:** (Regression) Predict the sale price of items sold on the website of the retailer JC Penney based on miscellaneous information on the product page like its title, description, rating, etc.
 
-## pop
+### pop
 
 Original data source: Online News Popularity Data Set
 
@@ -169,7 +169,7 @@ Link: https://archive.ics.uci.edu/ml/datasets/online+news+popularity
 
 **Task:** 
 
-## channel
+### channel
 
 Original data source: Online News Popularity Data Set
 
