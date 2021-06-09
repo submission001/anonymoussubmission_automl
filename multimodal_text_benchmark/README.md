@@ -13,6 +13,8 @@ print(train_dataset.data)
 ```
 
 These commands will also download a local copy of the dataset file, which is either in Parquet or CSV format (both can be easily loaded into pandas DataFrame).
+The data files are currently hosted in AWS Simple Cloud Storage (S3), you can find the location of each file in [datasets.py](src/auto_mm_bench/datasets.py). 
+For the official benchmark, each dataset is provided with a training/test split, but we leave it up to ML systems how much validation data to set aside from the training data. 
 
 The statistics of the benchmarking datasets are listed in the table below. The list of `keys` are also shown in [scripts/benchmark/benchmark_datasets.txt](scripts/benchmark/benchmark_datasets.txt). You can use these `key` strings to load any of the datasets in the benchmark via the above code. 
 
