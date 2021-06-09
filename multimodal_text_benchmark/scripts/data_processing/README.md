@@ -22,8 +22,6 @@ python3 process_jigsaw.py
 
 ## Product Sentiment Analysis
 
-Source: https://www.machinehack.com/hackathons/product_sentiment_classification_weekend_hackathon_19/overview
-
 ```
 mkdir -p machine_hack_product_sentiment
 wget https://automl-mm-bench.s3.amazonaws.com/machine_hack_product_sentiment/all_train.csv -O machine_hack_product_sentiment/all_train.csv
@@ -75,6 +73,7 @@ python3 process_ae_price_prediction.py
 ## JC Penny
 
 Source: https://www.kaggle.com/PromptCloudHQ/all-jc-penny-products
+
 First download the data and then run:
 
 ```
