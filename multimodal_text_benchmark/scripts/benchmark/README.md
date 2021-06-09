@@ -1,23 +1,25 @@
 # Run experiments
 
+This folder lists various commands to run different ML methods over the benchmark. 
+
 ## AG Tabular-Baselines
 
-- AG-Tabular Weighted, No NGram
+- AG-Tabular Weighted, no N-Gram
 ```
 bash run_multimodal_benchmark.sh ag_tabular_without_text no no 123
 ```
 
-- AG-Tabular Stack, No NGram
+- AG-Tabular Stack, no N-Gram
 ```
 bash run_multimodal_benchmark.sh ag_tabular_without_text 5fold_1stack no 123 0
 ```
 
-- AG-Tabular Weighted, NGram
+- AG-Tabular Weighted, with N-Gram
 ```
 bash run_multimodal_benchmark.sh ag_tabular_old no no 123 0
 ```
 
-- AG-Tabular Stack, NGram
+- AG-Tabular Stack, with N-Gram
 ```
 bash run_multimodal_benchmark.sh ag_tabular_old 5fold_1stack no 123 0
 ```
@@ -72,9 +74,9 @@ bash run_multimodal_benchmark.sh ag_text_multimodal no electra_base_late_fusion_
 bash run_multimodal_benchmark.sh ag_text_multimodal no electra_base_late_fusion_mean_e10_avg3 123 0
 ```
 
-## Aggregation Strategy
+## Aggregation of Text and Tabular Models
 
-We attached the ensemble-based approach. For embedding based approach, you will need to train the model in the previous step and extract embedding via `extract_text_embedding.py`
+We demonstrate the ensemble-based approach to aggregation. For embedding based approaches, you will need to train the model in the previous step and extract embedding via `extract_text_embedding.py`, and finally run tabular models (e.g. AG Tabular-Baselines, no N-Gram).
 
 - Weighted Ensemble
 ```
