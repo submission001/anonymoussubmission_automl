@@ -1,6 +1,8 @@
 # Run experiments
 
-This folder lists various commands to run different ML methods over the benchmark. 
+This folder lists various commands to run different ML methods over the benchmark. To run a method on only a particular dataset (say `prod` for example) rather than the full benchmark, you can add the following flag to the below commands: ` --dataset product_sentiment_machine_hack`. 
+For more information on other flags you can specify, see [ag_benchmark.py](https://github.com/submission001/anonymoussubmission_automl/blob/master/multimodal_text_benchmark/scripts/benchmark/ag_benchmark.py).
+
 
 ## AG Tabular-Baselines
 
