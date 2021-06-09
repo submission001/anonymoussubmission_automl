@@ -333,8 +333,8 @@ def get_parser():
     parser.add_argument('--stack_level', default=None)
     parser.add_argument('--competition',
                         action='store_true',
-                        help='Train on the full dataset. '
-                             'This can be used for submission.')
+                        help='Use this flag to fit models on the full train+test dataset. '
+                             'This can be useful for subsequent submission to a prediction competition.')
     return parser
 
 
