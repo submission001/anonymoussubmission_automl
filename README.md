@@ -7,7 +7,7 @@ Python code is provided to run different variants of the [AutoGluon](https://git
 
 ## Details about the Datasets
 
-The datasets in our benchmark are described in the [multimodal_text_benchmark](multimodal_text_benchmark) folder.
+The datasets in our benchmark are described in the [multimodal_text_benchmark](multimodal_text_benchmark) folder, as well as example code to load a dataset into Python.
 
 
 ## License
@@ -68,4 +68,4 @@ For more information or if you want to run a different version of AutoGluon, ple
 
 ## Run Experiments
 
-Go to [multimodal_text_benchmark/scripts/benchmark](multimodal_text_benchmark/scripts/benchmark) to view how to run the benchmark codes.
+Go to [multimodal_text_benchmark/scripts/benchmark](multimodal_text_benchmark/scripts/benchmark) to see how to run different ML methods over the benchmark. 
