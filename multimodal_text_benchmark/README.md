@@ -48,18 +48,23 @@ Original data source: Product Sentiment Classification (MachineHack prediction c
 
 Link: https://machinehack.com/hackathons/product_sentiment_classification_weekend_hackathon_19/overview
 
-
+**Task:** (Multiclass Classification) Classify the sentiment of user reviews of products based on the review text and product type.
+ 
 ## airbnb
 
 Original data source: Melbourne Airbnb Open Data
 
 Link: https://www.kaggle.com/tylerx/melbourne-airbnb-open-data
 
+**Task:** (Multiclass Classification) Predict the price label of AirBnb listings (in Melbourne, Australia) based on the page of each listing which includes many miscellaneous features about the listing.
+
 ## wine
 
 Original data source: 130k wine reviews with variety, location, winery, price, and description (from WineEnthusiast)
 
 Link: https://www.kaggle.com/zynicide/wine-reviews
+
+**Task:** (Multiclass Classification)  Classify the variety of wines based on tasting descriptions from sommeliers, their price, country-of-origin, and other features.
 
 ## imdb
 
@@ -70,11 +75,16 @@ Link: https://www.kaggle.com/PromptCloudHQ/imdb-data
 **Note:** PromptCloud released the original version of the data from which the version of this dataset in our benchmark
 was created.
 
+**Task:** (Binary Classification) Predict whether or not a movie falls within the Drama category based on its name, description,
+actors/directors, year released, runtime, and other features.
+
 ## jigsaw
 
 Original data source: Jigsaw Unintended Bias in Toxicity Classification (Kaggle prediction competition)
 
 Link: https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification
+
+**Task:** (Binary Classification) Predict whether online social media comments are toxic based on their text and additional tabular features providing information about the post (e.g. likes, rating, date created, etc.). 
 
 ## fake
 
@@ -82,11 +92,15 @@ Original data source: Fake JobPosting Prediction
 
 Link: https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction
 
+**Task:** (Binary Classification) Predict whether online job postings are real or fake based on their text, amount of salary offered, degree of education demanded, etc.
+
 ## kick
 
 Original data source: Funding Successful Projects on Kickstarter
 
 Link: https://www.kaggle.com/codename007/funding-successful-projects
+
+**Task:** (Binary Classification) Predict whether a proposed Kickstarter project will achieve funding goal based on its title, description, amount of money requested, date posted, and other features.
 
 ## ae
 
@@ -97,11 +111,15 @@ Link: https://www.kaggle.com/PromptCloudHQ/innerwear-data-from-victorias-secret-
 **Note:** PromptCloud released the original version of the data from which the version of this dataset in our benchmark
 was created.
 
+**Task:** (Regression) Predict the price of inner-wear items sold by retailer American Eagle based on features from their online product page.
+
 ## qaa
 
 Original data source: Google QUEST Q&A Labeling (Kaggle prediction competition)
 
 Link: https://www.kaggle.com/c/google-quest-challenge
+
+**Task:** (Regression) Given a question and an answer (from the Crowdsource team at Google) as well as additional category features, predict the (subjective) type of the answer in relation to the question.
 
 ## qaq
 
@@ -109,17 +127,24 @@ Original data source: Google QUEST Q&A Labeling (Kaggle prediction competition)
 
 Link: https://www.kaggle.com/c/google-quest-challenge
 
+**Task:** (Regression) Given a question and an answer (from the Crowdsource team at Google) as well as additional
+ category features, predict the (subjective) type of the question in relation to the answer.
+
 ## cloth
 
 Original data source: Women's E-Commerce Clothing Reviews
 
 Link: https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews
 
+**Task:** Predict the score of a customer review of clothing items (sold by an anonymous retailer) based on the review text, and product features like the clothing category. 
+
 ## mercari
 
 Original data source: Mercari Price Suggestion Challenge (Kaggle prediction competition)
 
 Link: https://www.kaggle.com/c/mercari-price-suggestion-challenge
+
+**Task:** (Regression) Predict the price of items sold in the online marketplace of Mercari based on miscellaneous information from the product page like name, description, free shipping, etc.
 
 ## jc
 
@@ -130,6 +155,7 @@ Link: https://www.kaggle.com/PromptCloudHQ/all-jc-penny-products
 **Note:** PromptCloud released the original version of the data from which the version of this dataset in our benchmark
 was created.
 
+**Task:** (Regression) Predict the sale price of items sold on the website of the retailer JC Penney based on miscellaneous information on the product page like its title, description, rating, etc.
 
 ## pop
 
@@ -137,6 +163,9 @@ Original data source: Online News Popularity Data Set
 
 Link: https://archive.ics.uci.edu/ml/datasets/online+news+popularity
 
+**Task:** (Regression) Predict the popularity (number of shares on social media, on log-scale) of Mashable.com news articles based on the text of their title, as well as auxiliary numerical features like the number of words in the article, its average token length, and how many keywords are listed, etc.
+
+**Task:** 
 
 ## channel
 
@@ -144,3 +173,4 @@ Original data source: Online News Popularity Data Set
 
 Link: https://archive.ics.uci.edu/ml/datasets/online+news+popularity
 
+**Task:** (Multiclass Classification) Predict which news category (i.e. channel) a Mashable.com news article belongs to based on the text of its title, as well as auxiliary numerical features like the number of words in the article, its average token length, how many keywords are listed, etc.
