@@ -1,7 +1,7 @@
 # Run experiments
 
 This folder lists various commands to run different ML methods over the benchmark. To run a method on only a particular dataset (say `prod` for example) rather than the full benchmark, you can add the following flag to the below commands: ` --dataset product_sentiment_machine_hack`. 
-For more information on other flags you can specify, see [ag_benchmark.py](https://github.com/submission001/anonymoussubmission_automl/blob/master/multimodal_text_benchmark/scripts/benchmark/ag_benchmark.py).
+For more information on other flags you can specify, see [ag_benchmark.py](ag_benchmark.py).
 
 
 ## AG Tabular-Baselines
@@ -78,7 +78,7 @@ bash run_multimodal_benchmark.sh ag_text_multimodal no electra_base_late_fusion_
 
 ## Aggregation of Text and Tabular Models
 
-We demonstrate the ensemble-based approach to aggregation. For embedding based approaches, you will need to train the model in the previous step and extract embedding via `extract_text_embedding.py`, and finally run tabular models (e.g. AG Tabular-Baselines, no N-Gram).
+We demonstrate the ensemble-based approach to aggregation. For embedding based approaches, you will need to train the model in the previous step and extract embedding via [extract_text_embeddings.py](extract_text_embeddings.py), and finally run tabular models (e.g. AG Tabular-Baselines, no N-Gram).
 
 - Weighted Ensemble
 ```
