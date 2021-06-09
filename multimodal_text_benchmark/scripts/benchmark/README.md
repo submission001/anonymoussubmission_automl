@@ -1,7 +1,13 @@
 # Run experiments
 
-This folder lists various commands to run different ML methods over the benchmark. To run a method on only a particular dataset (say `prod` for example) rather than the full benchmark, you can add the following flag to the below commands: ` --dataset product_sentiment_machine_hack`. 
-For more information on other flags you can specify, see [ag_benchmark.py](ag_benchmark.py).
+This folder lists various commands to run different ML methods over the benchmark. To run a method on only a particular dataset (say `prod` for example) rather than the full benchmark, you can add the following flag to the below commands: 
+``` 
+ --dataset product_sentiment_machine_hack
+```
+
+For more information on other flags you can specify, see [ag_benchmark.py](ag_benchmark.py). 
+
+To learn how to add your own ML methods to run on the benchmark, see [h2o_benchmark.py](h2o_benchmark.py) for an example to run H2O AutoML.
 
 
 ## AG Tabular-Baselines
