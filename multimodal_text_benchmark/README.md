@@ -167,8 +167,6 @@ Link: https://archive.ics.uci.edu/ml/datasets/online+news+popularity
 
 **Task:** (Regression) Predict the popularity (number of shares on social media, on log-scale) of Mashable.com news articles based on the text of their title, as well as auxiliary numerical features like the number of words in the article, its average token length, and how many keywords are listed, etc.
 
-**Task:** 
-
 ### channel
 
 Original data source: Online News Popularity Data Set
