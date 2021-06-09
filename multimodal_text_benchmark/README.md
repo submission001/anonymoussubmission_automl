@@ -44,59 +44,103 @@ The folder [scripts/data_processing](scripts/data_processing/README.md) contains
 
 ## prod
 
-Link to original data source: https://machinehack.com/hackathons/product_sentiment_classification_weekend_hackathon_19/overview
+Original data source: Product Sentiment Classification (MachineHack prediction competition)
+
+Link: https://machinehack.com/hackathons/product_sentiment_classification_weekend_hackathon_19/overview
 
 
 ## airbnb
 
-Link to original data source: 
+Original data source: Melbourne Airbnb Open Data
+
+Link: https://www.kaggle.com/tylerx/melbourne-airbnb-open-data
 
 ## wine
 
-Link to original data source: 
+Original data source: 130k wine reviews with variety, location, winery, price, and description (from WineEnthusiast)
+
+Link: https://www.kaggle.com/zynicide/wine-reviews
 
 ## imdb
 
-Link to original data source: 
+Original data source: IMDB data from 2006 to 2016 - A data set of 1,000 popular movies on IMDB in the last 10 years
+
+Link: https://www.kaggle.com/PromptCloudHQ/imdb-data
+
+**Note:** PromptCloud released the original version of the data from which the version of this dataset in our benchmark
+was created.
 
 ## jigsaw
 
-Link to original data source: 
+Original data source: Jigsaw Unintended Bias in Toxicity Classification (Kaggle prediction competition)
+
+Link: https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification
 
 ## fake
 
-Link to original data source: 
+Original data source: Fake JobPosting Prediction
+
+Link: https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction
 
 ## kick
 
-Link to original data source: 
+Original data source: Funding Successful Projects on Kickstarter
+
+Link: https://www.kaggle.com/codename007/funding-successful-projects
 
 ## ae
 
-Link to original data source: 
+Original data source: Innerwear Data from American Eagle
+
+Link: https://www.kaggle.com/PromptCloudHQ/innerwear-data-from-victorias-secret-and-others
+
+**Note:** PromptCloud released the original version of the data from which the version of this dataset in our benchmark
+was created.
 
 ## qaa
 
-Link to original data source: 
+Original data source: Google QUEST Q&A Labeling (Kaggle prediction competition)
+
+Link: https://www.kaggle.com/c/google-quest-challenge
 
 ## qaq
 
-Link to original data source: 
+Original data source: Google QUEST Q&A Labeling (Kaggle prediction competition)
+
+Link: https://www.kaggle.com/c/google-quest-challenge
 
 ## cloth
 
-Link to original data source: 
+Original data source: Women's E-Commerce Clothing Reviews
+
+Link: https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews
 
 ## mercari
 
-Link to original data source: 
+Original data source: Mercari Price Suggestion Challenge (Kaggle prediction competition)
+
+Link: https://www.kaggle.com/c/mercari-price-suggestion-challenge
 
 ## jc
 
-Link to original data source: 
+Original data source: 20,000 product listings from JCPenney
+
+Link: https://www.kaggle.com/PromptCloudHQ/all-jc-penny-products
+
+**Note:** PromptCloud released the original version of the data from which the version of this dataset in our benchmark
+was created.
+
+
+## pop
+
+Original data source: Online News Popularity Data Set
+
+Link: https://archive.ics.uci.edu/ml/datasets/online+news+popularity
+
 
 ## channel
 
-Link to original data source: 
+Original data source: Online News Popularity Data Set
 
-## pop
+Link: https://archive.ics.uci.edu/ml/datasets/online+news+popularity
+
